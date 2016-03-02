@@ -6,7 +6,7 @@ function E_p = EightPtAlg( A, B )
 %We need to build the Y matrix. Y will be an 8x9 matrix where each column 
 %represents the Kth matching points between the head and trail images.
 
-   Y = zeros(9,8);
+   Y = zeros(9,10);
 
    for m = 1 : size(Y,2)
       Y(1,m) = B(1,m)*A(1,m);
@@ -17,7 +17,7 @@ function E_p = EightPtAlg( A, B )
       Y(6,m) = B(2,m);
       Y(7,m) = A(1,m);
       Y(8,m) = A(2,m);
-      Y(9,m) = 1;
+      Y(9,m) = -1;
    end
 
    
