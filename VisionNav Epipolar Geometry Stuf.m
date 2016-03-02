@@ -142,4 +142,7 @@ disp( 'E_p rr,tt,rpy:')
 DcmToRpy( rr ) * 180/pi
 %WP = ProjectPoints( rr, tt, An, Bn )
 
+e = M*C^2;
+e = e';
+fprintf( 'hello LC community' );
 
